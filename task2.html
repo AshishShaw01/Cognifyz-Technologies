@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Level 1 Task 2</title>
+  <link rel="stylesheet" href="task2.css">
+</head>
+<body>
+
+  <h1>Level 1 Task 2</h1>
+
+<section class="box">
+    <h2> Change Button Color</h2>
+    <p>Click the button to change its background color randomly.</p>
+    <button id="colorBtn" onclick="changeColor()">Click Me</button>
+  </section>
+
+  <section class="box">
+    <h2> Greeting Based on Time</h2>
+    <p>Click the button to get a greeting based on the time of day.</p>
+    <button onclick="showGreeting()">Greet Me</button>
+  </section>
+
+  <section class="box">
+    <h2> Simple Calculator</h2>
+    <input type="number" id="num1" placeholder="Number 1">
+    <input type="number" id="num2" placeholder="Number 2">
+
+    <div class="btn-group">
+      <button onclick="calculate('add')">Add</button>
+      <button onclick="calculate('subtract')">Subtract</button>
+      <button onclick="calculate('multiply')">Multiply</button>
+      <button onclick="calculate('divide')">Divide</button>
+    </div>
+
+    <p id="result" class="result"></p>
+  </section>
+
+  <script src="task2.js"></script>
+</body>
+</html>
