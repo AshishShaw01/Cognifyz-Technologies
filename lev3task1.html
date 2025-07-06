@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Level 3 Task 1</title>
+  <link rel="stylesheet" href="lev3task1.css" />
+</head>
+<body>
+
+  <h2 class="center">Image Gallery</h2>
+  <div class="gallery">
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/032/412/986/small/programmer-coding-compiler-encode-debug-and-developer-application-software-for-business-corporate-with-laptop-computer-man-programming-coding-web-app-from-work-at-home-code-show-screen-monitor-photo.jpg" alt="Thumb 1" onclick="openLightbox(this.src)">
+    <img src="https://img.freepik.com/premium-photo/conceptual-programming-coding-future-software_31965-24398.jpg?semt=ais_items_boosted&w=740" alt="Thumb 2" onclick="openLightbox(this.src)">
+    <img src="https://i.pinimg.com/originals/d4/c1/96/d4c196024ebc4b178fb13e4deaaf62ad.jpg" alt="Thumb 3" onclick="openLightbox(this.src)">
+  </div>
+
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Full View">
+  </div>
+
+  <h2 class="center">Image Slideshow</h2>
+  <div class="slideshow">
+    <div class="slides">
+      <img src="https://i.pinimg.com/originals/d4/c1/96/d4c196024ebc4b178fb13e4deaaf62ad.jpg" alt="Slide 1" />
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/032/412/986/small/programmer-coding-compiler-encode-debug-and-developer-application-software-for-business-corporate-with-laptop-computer-man-programming-coding-web-app-from-work-at-home-code-show-screen-monitor-photo.jpg" alt="Slide 2" />
+      <img src="https://img.freepik.com/premium-photo/conceptual-programming-coding-future-software_31965-24398.jpg?semt=ais_items_boosted&w=740" alt="Slide 3" />
+    </div>
+  </div>
+
+  <script>
+    function openLightbox(src) {
+      document.getElementById("lightbox-img").src = src;
+      document.getElementById("lightbox").style.display = "flex";
+    }
+
+    function closeLightbox() {
+      document.getElementById("lightbox").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>
